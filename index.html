@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grill & Go</title>
+  <link rel="stylesheet" href="/src/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+
+</head>
+<body class="bg-gray-100">
+  <!--navbar-->
+  <nav class="bg-white shadow-md sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-16">
+        <!-- Logo -->
+        <div class="flex-shrink-0 text-2xl font-bold text-red-600">
+          Grill & Go
+        </div>
+  
+        <!-- Mobile button -->
+        <div class="md:hidden">
+          <button id="menu-toggle" class="text-gray-700 focus:outline-none">
+            <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                 >
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+          </button>
+        </div>
+  
+        <!-- Mobile links -->
+        <div id="menu" class="hidden md:flex space-x-6 md:items-center">
+          <a href="#" class="block py-2 px-4 text-gray-700 hover:text-red-600 transition">Home</a>
+          <a href="#" class="block py-2 px-4 text-gray-700 hover:text-red-600 transition">Menu</a>
+          <a href="#" class="block py-2 px-4 text-gray-700 hover:text-red-600 transition">About us</a>
+          <a href="#" class="block py-2 px-4 text-gray-700 hover:text-red-600 transition">Contact</a>
+          <a href="#" class="bg-red-600 text-white px-4 py-2 rounded-xl hover:bg-red-700 transition hidden md:inline-block">Make your order</a>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Mobile links -->
+    <div id="mobile-menu" class="md:hidden opacity-0 scale-95 max-h-0 overflow-hidden px-4 pb-4 transition-all duration-300 ease-in-out transform">
+      <a href="#" class="block py-2 text-gray-700 hover:text-red-600">Home</a>
+      <a href="#" class="block py-2 text-gray-700 hover:text-red-600">Menu</a>
+      <a href="#" class="block py-2 text-gray-700 hover:text-red-600">About us</a>
+      <a href="#" class="block py-2 text-gray-700 hover:text-red-600">Contact</a>
+      <a href="#" class="block mt-2 bg-red-600 text-white px-4 py-2 rounded-xl hover:bg-red-700 transition">Make your order</a>
+    </div>
+  </nav>
+ <!--Hero section-->
+ <section id="home" class="h-screen bg-cover bg-center flex items-center justify-center" style="background-image:url('https://static.vecteezy.com/system/resources/previews/038/463/113/large_2x/ai-generated-a-group-of-friends-enjoying-a-picnic-with-burgers-potato-chips-and-cold-beverages-free-photo.jpeg');">
+<div class="text-center text-white">
+  <h1 class="text-5xl font-bold">Delicius Meals, Fast & fresh</h1>
+  <p class="mt-4 text-xl">Perfect for when you're on the Go!</p>
+  <button class="mt-6 bg-orange-500 px-6 py-3 text-white font-semibold rounded-lg hover:bg-orange-400">Order NOW</button>
+</div>
+
+ </section>
+ <!-- Menu Section -->
+<section id="menu" class="py-20 bg-white">
+  <div class="container mx-auto text-center">
+    <h2 class="text-4xl font-semibold">Our Menu</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-10">
+      
+      <!-- Grilled Chicken -->
+      <div class="bg-gray-200 p-4 rounded-lg shadow-lg hover:shadow-xl transition-all">
+        <img src="https://media.istockphoto.com/id/157526986/photo/roast-chicken-on-the-bbq.jpg?s=612x612&w=is&k=20&c=yiy_zpMT56mVKq4kw98TByyx9iiiZvPaihe7eq06rqU=" alt="Grilled Chicken" class="w-32 h-32 object-cover mx-auto rounded-full mb-4">
+        <h3 class="text-xl font-bold">Grilled Chicken</h3>
+        <p class="mt-2 text-gray-700">Perfectly grilled chicken served with a side of fries.</p>
+        <span class="block mt-4 text-orange-500 font-semibold">$12.99</span>
+       
+      </div>
+
+      <!-- Cheese Burger -->
+      <div class="bg-gray-200 p-4 rounded-lg shadow-lg hover:shadow-xl transition-all">
+        <img src="https://media.istockphoto.com/id/1398630614/photo/bacon-cheeseburger-on-a-toasted-bun.jpg?s=612x612&w=is&k=20&c=LLWG8PTjYnYXOotIJrPJgsIiaf1uzkAciGEgR71BC3M=" alt="Cheese Burger" class="w-32 h-32 object-cover mx-auto rounded-full mb-4">
+        <h3 class="text-xl font-bold">Cheese Burger</h3>
+        <p class="mt-2 text-gray-700">Juicy beef patty with cheese, lettuce, and tomato on a toasted bun.</p>
+        <span class="block mt-4 text-orange-500 font-semibold">$10.99</span>
+       
+      </div>
+
+      <!-- Veggie Salad -->
+      <div class="bg-gray-200 p-4 rounded-lg shadow-lg hover:shadow-xl transition-all">
+        <img src="https://media.istockphoto.com/id/1416818056/photo/colourful-vegan-bowl-with-quinoa-and-sweet-potato.jpg?s=612x612&w=is&k=20&c=0ZlR6_lVrVtYZyq-kmuc2sf9-KyTE_bGqELrRuV2Ap4=" alt="Veggie Salad" class="w-32 h-32 object-cover mx-auto rounded-full mb-4">
+        <h3 class="text-xl font-bold">Veggie Salad</h3>
+        <p class="mt-2 text-gray-700">Fresh vegetables with a light dressing, perfect for a healthy choice.</p>
+        <span class="block mt-4 text-orange-500 font-semibold">$8.99</span>
+        </div>
+
+      <!-- Fish Tacos -->
+      <div class="bg-gray-200 p-4 rounded-lg shadow-lg hover:shadow-xl transition-all">
+        <img src="https://media.istockphoto.com/id/491788887/photo/homemade-baja-fish-tacos.jpg?s=612x612&w=is&k=20&c=JGHtQtKOYdcB5iyBLq1omMhp-ub5TPTtrKuUWkC9GaY=" alt="Fish Tacos" class="w-32 h-32 object-cover mx-auto rounded-full mb-4">
+        <h3 class="text-xl font-bold">Fish Tacos</h3>
+        <p class="mt-2 text-gray-700">Crispy fish fillets with tangy salsa and a drizzle of lime crema.</p>
+        <span class="block mt-4 text-orange-500 font-semibold">$9.99</span>
+        
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- About Section -->
+<section id="about" class="py-20 bg-gray-100">
+  <div class="container mx-auto text-center">
+    <h2 class="text-4xl font-semibold">About Us</h2>
+    <p class="mt-6 text-xl text-gray-700 max-w-2xl mx-auto">
+      At Grill & Go, we believe in serving high-quality food fast. Our goal is to bring fresh, delicious meals to your doorstep with just a click. Whether you're at home or on the go, we strive to provide a convenient dining experience without compromising on taste or quality.
+    </p>
+    <div class="mt-10 flex justify-center gap-6">
+      <div class="bg-white p-6 rounded-lg shadow-lg max-w-xs">
+        <h3 class="text-xl font-bold text-orange-500">Our Mission</h3>
+        <p class="mt-2 text-gray-700">
+          To provide delicious meals that are fast, fresh, and affordable, making it easier for our customers to enjoy great food anytime, anywhere.
+        </p>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow-lg max-w-xs">
+        <h3 class="text-xl font-bold text-orange-500">Our Vision</h3>
+        <p class="mt-2 text-gray-700">
+          To become a leading brand in the fast-food industry by offering convenient and healthy meal options that meet the needs of busy lifestyles.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Contact Section -->
+<section id="contact" class="py-20 bg-gray-100 text-black">
+  <div class="container mx-auto text-center">
+    <h2 class="text-4xl font-semibold">Contact Us</h2>
+    <p class="mt-6 text-xl">Like what you see? Ready to make an order? Reach out below!</p>
+
+    <!-- WhatsApp and Instagram Buttons -->
+    <div class="mt-10 flex justify-center gap-6">
+      <!-- WhatsApp Button -->
+      <a href="https://wa.me/51963871901" target="_blank" class="bg-orange-500 hover:bg-orange-600 text-white text-lg font-bold px-8 py-4 rounded-lg transition transform hover:scale-105">
+        Send Message
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<!-- Footer Section -->
+<footer class="bg-black text-white py-10 mt-20">
+  <div class="container mx-auto text-center">
+    <!-- Redes Sociales -->
+    <div class="mb-6">
+      <h3 class="text-2xl font-semibold mb-4">Contact Me</h3>
+      <div class="flex justify-center gap-6">
+
+        <!-- Instagram -->
+        <a href="https://instagram.com/jox.et" target="_blank" class="text-pink-600 hover:text-pink-500 text-3xl">
+          <i class="fab fa-instagram"></i>
+        </a>
+
+        </a>
+      </div>
+    </div>
+    <div class="mb-6">
+      <h3 class="text-2xl font-semibold mb-4">Contact Me via Email</h3>
+      <p class="mt-6 text-xl">
+        Do you like what you see? I’m the developer behind this design. Reach out if you need any assistance!
+        <a href="mailto:tu-correo@ejemplo.com" class="text-orange-500 hover:text-orange-400">Joshuaterrones18@icloud.com</a>
+      </p>
+    </div>
+ 
+    <!-- Copyright -->
+    <div>
+      <p class="text-lg">&copy;2025 Foco Digital. Designed by Josh</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const menuToggle = document.getElementById('menu-toggle');
+  const mobileMenu = document.getElementById('mobile-menu');
+
+  let isOpen = false;
+
+  menuToggle.addEventListener('click', () => {
+    isOpen = !isOpen;
+
+    if (isOpen) {
+      mobileMenu.classList.remove('opacity-0', 'scale-95', 'max-h-0');
+      mobileMenu.classList.add('opacity-100', 'scale-100', 'max-h-96');
+    } else {
+      mobileMenu.classList.remove('opacity-100', 'scale-100', 'max-h-96');
+      mobileMenu.classList.add('opacity-0', 'scale-95', 'max-h-0');
+    }
+  });
+</script>
+
+</body>
+</html>
